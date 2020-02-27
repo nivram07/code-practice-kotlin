@@ -14,6 +14,10 @@ fun main(args: Array<String>) {
 
     val boss = HeadTeacher("123A", "Marvin")
     println("${boss.nickname}: ${boss.bossId}")
+
+    CarFactory.printBest()
+
+    run { println("hello lambda") }
 }
 
 interface Person {
@@ -30,5 +34,24 @@ class HeadTeacher(bossId: String, nickname: String) : Teacher(nickname) {
         this.bossId = "#$bossId"
     }
 }
+
+object CarFactory {
+    fun printBest() = println("Toyota")
+}
+
+class Vehicle {
+    companion object {
+        fun getName() = Vehicle.javaClass.canonicalName
+    }
+
+    object Loader {
+
+    }
+
+    object  Implementation {
+
+    }
+}
+
 
 
