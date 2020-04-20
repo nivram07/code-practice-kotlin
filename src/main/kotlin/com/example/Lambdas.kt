@@ -13,6 +13,11 @@ fun main(args: Array<String>) {
     run(inc)
     println(count.value)
 
+    var count2 = 0
+    val incCount2 = { count2++ }
+    run(incCount2)
+    println("count2: $count2")
+
     val responses = listOf("200 OK", "418 I'm a teapot", "500 Internal Server Error")
     printProblemCounts(responses)
 
