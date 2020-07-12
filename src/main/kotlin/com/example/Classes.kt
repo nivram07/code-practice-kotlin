@@ -18,6 +18,8 @@ fun main(args: Array<String>) {
     CarFactory.printBest()
 
     run { println("hello lambda") }
+
+    println(Vehicle.getName())
 }
 
 interface Person {
